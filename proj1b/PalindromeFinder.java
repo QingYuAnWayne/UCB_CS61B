@@ -3,7 +3,7 @@ public class PalindromeFinder {
 
     /** For what N are there the most palindromes in English?
      *  What is the longest offByN palindrome for any N? */
-    public String longestWord;
+    private String longestWord;
 
     public PalindromeFinder() {
         longestWord = "";

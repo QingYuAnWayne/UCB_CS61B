@@ -2,7 +2,7 @@
  * @author Qing YuAn
  * @since 30 Nov 2021
  * */
-public class ArrayDeque<T> implements Deque<T>{
+public class ArrayDeque<T> implements Deque<T> {
     public static final int DEFAULT_SIZE = 8;
     private T[] arr;
     private int size;
@@ -57,7 +57,8 @@ public class ArrayDeque<T> implements Deque<T>{
             arr = newArr;
         } else {
             System.arraycopy(arr, 0, newArr, 0, nextLast);
-            System.arraycopy(arr, checkIndex(nextFirst + 1), newArr, nextFirst + sizeChange + 1, arr.length - nextFirst - 1);
+            System.arraycopy(arr, checkIndex(nextFirst + 1), newArr,
+                    nextFirst + sizeChange + 1, arr.length - nextFirst - 1);
             arr = newArr;
             nextFirst = nextLast + newSize - size - 1;
         }

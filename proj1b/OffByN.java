@@ -15,12 +15,7 @@ public class OffByN implements CharacterComparator{
      */
     @Override
     public boolean equalChars(char x, char y) {
-        if (Character.isLetter(x) && Character.isLetter(y)) {
-            return x - y == N || y - x == N;
-        } else {
-            System.out.println("Error! None-Letter is not accepted");
-            return false;
-        }
+        return x - y == N || y - x == N;
     }
 
 }

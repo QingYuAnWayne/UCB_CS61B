@@ -3,7 +3,7 @@
  * @author Qing YuAn
  * @since 27 Nov 2021
  */
-public class LinkedListDeque<T> implements Deque<T>{
+public class LinkedListDeque<T> implements Deque<T> {
     /** The sentinel node in Deque. */
     private IntNode sentinel;
     /** The size of Deque. */
